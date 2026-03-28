@@ -1,132 +1,37 @@
 :root {
   color-scheme: light;
-  --ink-900: #1a1c1f;
-  --ink-700: #3a3f45;
-  --sand-50: #f7f3ee;
-  --moss-500: #4b7d5c;
-  --shadow: 0 24px 60px rgba(26, 28, 31, 0.18);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
-  font-family: "Manrope", system-ui, -apple-system, sans-serif;
-  color: var(--ink-900);
-  background: #fff;
-  line-height: 1.6;
+  font-family: "Manrope", sans-serif;
+  background: #faf7f2;
+  color: #141414;
+  margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.section-shell {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
-.hero {
-  min-height: 100vh;
-  background: radial-gradient(circle at top left, #fff5e6 0%, #f8efe6 40%, #efe4d6 100%);
-  display: flex;
-  align-items: center;
-}
-
-.hero-shell {
-  width: min(1100px, 92vw);
-  margin: 0 auto;
-}
-
-.hero-card {
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 28px;
-  border: 1px solid rgba(26, 28, 31, 0.08);
-  box-shadow: var(--shadow);
-  padding: 48px;
-  backdrop-filter: blur(12px);
+.card {
+  background: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 12px 30px rgba(11,11,11,0.12);
+  border: 1px solid #e6dccd;
 }
 
 .badge {
-  display: inline-block;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  background: var(--ink-900);
-  color: var(--sand-50);
-}
-
-h1 {
-  font-family: "Playfair Display", serif;
-  font-size: clamp(2.2rem, 4.6vw, 3.2rem);
-  line-height: 1.2;
-  margin: 24px 0 16px;
-}
-
-p {
-  font-size: 1.1rem;
-  color: var(--ink-700);
-  max-width: 640px;
-}
-
-.actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-top: 32px;
-}
-
-.btn {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  padding: 12px 22px;
-  border-radius: 999px;
+  border-radius: 9999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  font-size: 0.95rem;
-  border: 1px solid transparent;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.btn.primary {
-  background: var(--ink-900);
-  color: var(--sand-50);
-  box-shadow: var(--shadow);
-}
-
-.btn.outline {
-  background: transparent;
-  border-color: var(--ink-900);
-  color: var(--ink-900);
-}
-
-.btn.moss {
-  background: var(--moss-500);
-  color: #fff;
-}
-
-.btn:hover {
-  transform: translateY(-1px);
-}
-
-.section {
-  padding: 70px 0;
-}
-
-.section.alt {
-  background: #faf7f1;
-}
-
-.section h2 {
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  margin-bottom: 12px;
-}
-
-@media (max-width: 720px) {
-  .hero-card {
-    padding: 32px;
-  }
-}
