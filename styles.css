@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   color-scheme: light;
   --ink-900: #1a1c1f;
   --ink-700: #3a3f45;
@@ -17,6 +17,7 @@ body {
   font-family: "Manrope", system-ui, -apple-system, sans-serif;
   color: var(--ink-900);
   background: #fff;
+  line-height: 1.6;
 }
 
 a {
@@ -24,36 +25,25 @@ a {
   text-decoration: none;
 }
 
-.min-h-screen {
+.hero {
   min-height: 100vh;
-}
-
-.bg-aurora {
   background: radial-gradient(circle at top left, #fff5e6 0%, #f8efe6 40%, #efe4d6 100%);
+  display: flex;
+  align-items: center;
 }
 
-.section-shell {
+.hero-shell {
   width: min(1100px, 92vw);
   margin: 0 auto;
 }
 
-.py-20 {
-  padding: 80px 0;
-}
-
-.card {
-  background: rgba(255, 255, 255, 0.86);
+.hero-card {
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 28px;
   border: 1px solid rgba(26, 28, 31, 0.08);
   box-shadow: var(--shadow);
-}
-
-.backdrop-blur {
+  padding: 48px;
   backdrop-filter: blur(12px);
-}
-
-.p-10 {
-  padding: 40px;
 }
 
 .badge {
@@ -63,68 +53,28 @@ a {
   font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-}
-
-.bg-ink-900 {
   background: var(--ink-900);
-}
-
-.text-sand-50 {
   color: var(--sand-50);
 }
 
-.text-ink-900 {
-  color: var(--ink-900);
-}
-
-.text-ink-700 {
-  color: var(--ink-700);
-}
-
-.font-display {
+h1 {
   font-family: "Playfair Display", serif;
-}
-
-.mt-6 {
-  margin-top: 24px;
-}
-
-.mt-4 {
-  margin-top: 16px;
-}
-
-.mt-8 {
-  margin-top: 32px;
-}
-
-.text-4xl {
-  font-size: clamp(2.1rem, 4vw, 2.9rem);
+  font-size: clamp(2.2rem, 4.6vw, 3.2rem);
   line-height: 1.2;
+  margin: 24px 0 16px;
 }
 
-.md-text-5xl {
-  font-size: clamp(2.4rem, 4.6vw, 3.2rem);
-}
-
-.text-lg {
+p {
   font-size: 1.1rem;
-  line-height: 1.7;
-}
-
-.max-w-2xl {
+  color: var(--ink-700);
   max-width: 640px;
 }
 
-.flex {
+.actions {
   display: flex;
-}
-
-.flex-wrap {
   flex-wrap: wrap;
-}
-
-.gap-4 {
-  gap: 16px;
+  gap: 14px;
+  margin-top: 32px;
 }
 
 .btn {
@@ -137,6 +87,7 @@ a {
   font-size: 0.95rem;
   border: 1px solid transparent;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
 }
 
 .btn.primary {
@@ -160,8 +111,22 @@ a {
   transform: translateY(-1px);
 }
 
+.section {
+  padding: 70px 0;
+}
+
+.section.alt {
+  background: #faf7f1;
+}
+
+.section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
 @media (max-width: 720px) {
-  .p-10 {
-    padding: 28px;
+  .hero-card {
+    padding: 32px;
   }
 }
